@@ -1,7 +1,102 @@
 // Put your custom SCSS code here
+*,
+:after,
+:before {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   border: 0 solid #e5e7eb
+}
+
+:root {
+  --color-neutral-50: 250,250,250;
+  --color-neutral-100: 245,245,245;
+  --color-neutral-200: 229,229,229;
+  --color-neutral-300: 212,212,212;
+  --color-neutral-400: 163,163,163;
+  --color-neutral-500: 115,115,115;
+  --color-neutral-600: 82,82,82;
+  --color-neutral-700: 64,64,64;
+  --color-neutral-800: 38,38,38;
+  --color-neutral-900: 23,23,23;
+  --color-neutral-950: 10,10,10;
+}
+
 h2 {
   text-decoration-line: underline;
   // font-variant: small-caps;
 }
 
 .docs-content :where(h3):not(:where([class~=not-docs-content],[class~=not-docs-content] *)) {
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-top: 1.2em;
+    margin-bottom: .6em;
+    line-height: 1.8;
+}
+
+.hb-steps {
+   margin-left: 1rem;
+   margin-bottom: 3rem;
+   border-left-width: 1px;
+   --tw-border-opacity: 1;
+   border-color: rgba(229,231,235,var(--tw-border-opacity));
+   padding-left: 1.5rem;
+   counter-reset: hb-step
+}
+
+:is([data-bs-theme="dark"] .hb-steps) {
+   --tw-border-opacity: 1;
+   border-color: rgba(var(--color-neutral-600),var(--tw-border-opacity))
+}
+
+.hb-steps h3 {
+   border-top-width: 0.25px;
+   counter-increment: hb-step
+}
+
+.hb-steps h3:before {
+   position: absolute;
+   height: 36px;
+   width: 36px;
+   border-radius: 9999px;
+   border-width: 4px;
+   --tw-border-opacity: 0.8;
+   border-color: rgba(var(--color-neutral-950),var(--tw-border-opacity))
+}
+
+:is([data-bs-theme="dark"] .hb-steps h3):before {
+   --tw-border-opacity: 1;
+   border-color: rgba(203,213,225,var(--tw-border-opacity))
+}
+
+.hb-steps h3:before {
+   --tw-bg-opacity: 1;
+   background-color: rgba(243,244,246,var(--tw-bg-opacity))
+}
+
+:is([data-bs-theme="dark"] .hb-steps h3):before {
+   --tw-bg-opacity: 1;
+   background-color: rgba(23,24,28,var(--tw-bg-opacity))
+}
+
+.hb-steps h3:before {
+   text-align: center;
+   text-indent: 0px;
+   font-size: 1rem;
+   font-weight: 800;
+   --tw-text-opacity: 1;
+   color: rgba(var(--color-neutral-700),var(--tw-text-opacity))
+}
+
+:is([data-bs-theme="dark"] .hb-steps h3):before {
+   --tw-text-opacity: 1;
+   color: rgba(var(--color-neutral-200),var(--tw-text-opacity))
+}
+
+.hb-steps h3:before {
+   margin-top: 3px;
+   margin-left: -41px;
+   content: counter(hb-step)
+}
+
