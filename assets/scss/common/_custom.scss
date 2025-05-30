@@ -21,12 +21,104 @@
   --color-neutral-950: 10,10,10;
 }
 
-h2 {
-  text-decoration-line: underline;
+div.techdoc {
+   counter-reset: td-h2 0;
+   display: block;
+}
+
+.techdoc h2 {
+   counter-reset: td-h3 0;
+}
+
+.techdoc h3 {
+   counter-reset: td-h4 0;
+}
+
+.techdoc h4 {
+   counter-reset: td-h5 0;
+}
+
+.techdoc h5 {
+   counter-reset: td-h6 1;
+}
+
+.techdoc h2::before {
+   counter-increment: td-h2;
+   content: counter(td-h2) ": ";
+}
+
+.techdoc h3::before {
+   counter-increment: td-h3;
+   content: counter(td-h2) "." counter(td-h3) ": ";
+}
+
+.techdoc h4::before {
+   counter-increment: td-h4;
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) ": ";
+}
+
+.techdoc h5::before {
+   counter-increment: td-h5;
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) ": ";
+}
+
+.techdoc h6::before {
+   counter-increment: td-h6;
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) "." counter(td-h6) ": ";
+}
+
+h1, .h1 {
+   font-size: calc(1.375rem + 1.5vw);
+}
+
+h2, .h2 {
+   font-size: calc(1.325rem + 0.9vw);
+   text-decoration-line: underline;
   // font-variant: small-caps;
 }
 
-.docs-content :where(h3):not(:where([class~=not-docs-content],[class~=not-docs-content] *)) {
+h3, .h3 {
+   font-size: calc(1.3rem + 0.6vw);
+}
+
+h4, .h4 {
+   font-size: calc(1.275rem + 0.2vw);
+}
+
+h5, .h5 {
+   font-size: 1.25rem;
+}
+
+h6, .h6 {
+   font-size: 1.125rem;
+}
+
+/*
+ol.thulite-steps li {
+   background-color: rgba(var(--color-neutral-50),1);
+}
+ol.thulite-steps li:nth-child(even) {
+   background-color: rgba(var(--color-neutral-100),0.5);
+}
+*/
+
+ol.thulite-steps > li > p:first-child {
+  font-weight: bold;
+}
+
+/*
+ol.thulite-steps li:first-child p:last-child {
+   border-bottom: 1px solid gray;
+}
+*/
+
+ol.thulite-steps > li > *:not(:first-child) {
+   /* border-bottom: 1px solid gray; */
+   margin-left: 1rem;
+}
+
+/*
+.docs-content :where(h3):not(:where([class=:not(docs-content)],[class=:not(docs-content)] *)) {
     color: #0f172a;
     font-weight: 600;
     font-size: 1.25em;
@@ -100,3 +192,4 @@ h2 {
    content: counter(hb-step)
 }
 
+*/

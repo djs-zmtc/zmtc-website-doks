@@ -1,0 +1,4 @@
+<div class="techdoc">
+  {{ $opts := dict "display" "block" }}
+  {{ .Inner | $.Page.RenderString $opts }}
+</div>
