@@ -20,19 +20,26 @@ Reference pages are ideal for outlining how things work in terse and clear terms
 
 {{% steps %}}
 
-### Step 1
+{{% step %}}
+Step 1
 
 The first step here.
+{{% /step %}}
 
-### Step 2
+{{% step %}}
+Step 2
 
 The second step here.
+{{% /step %}}
 
-### Another Step
+{{% step %}}
+Another Step
 
 This is another step in the process.
 
-### Another Step 4
+{{% /step %}}
+{{% step %}}
+Another Step 4
 
 This is another step in the process.
 
@@ -40,28 +47,19 @@ This is another step in the process.
 Get-Location
 ```
 
-### Another Step 5
+{{% /step %}}
+
+{{% step %}}
+Another Step 5
 
 This is another step in the process.
+{{% /step %}}
 
-### Another Step 6
-
-This is another step in the process.
-
-### Another Step 7
+{{% step %}}
+Another Step 6
 
 This is another step in the process.
-
-### Another Step 8
-
-This is another step in the process.
-
-### Another Step 9
-
-This is another step in the process.
-
-### Another Step 10
-
-This is another step in the process.
+{{% /step %}}
 
 {{% /steps %}}
+
