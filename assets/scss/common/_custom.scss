@@ -1,1 +1,7 @@
 // Put your custom SCSS code here
+h2 {
+  text-decoration-line: underline;
+  // font-variant: small-caps;
+}
+
+.docs-content :where(h3):not(:where([class~=not-docs-content],[class~=not-docs-content] *)) {
