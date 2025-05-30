@@ -6,6 +6,11 @@ images = ["cover.png"]
 # mainSections
 mainSections = ["docs"]
 
+[toc]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+
 [social]
   twitter = "getdoks"
 

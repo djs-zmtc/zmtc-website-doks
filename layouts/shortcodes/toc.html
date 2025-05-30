@@ -1,0 +1,12 @@
+<div id="toc">
+{{ $startLevel := $.Site.Params.toc.startLevel }}
+{{ if (.Get "startLevel") }}{{ $startLevel = .Get "startLevel" }}{{ end }}
+{{ if (.Get "startlevel") }}{{ $startLevel = .Get "startlevel" }}{{ end }}
+{{ if (.Get "start") }}{{ $startLevel = .Get "start" }}{{ end }}
+{{ $endLevel := $.Site.Params.toc.endLevel }}
+{{ if (.Get "endLevel") }}{{ $endLevel = .Get "endLevel" }}{{ end }}
+{{ if (.Get "endLevel") }}{{ $endLevel = .Get "endLevel" }}{{ end }}
+{{ $ordered := $.Site.Params.toc.ordered }}
+{{ if isset .Params "ordered" }}{{ $ordered = .Get "ordered" }}{{ end }}
+{{ $.Page.Fragments.ToHTML $startLevel $endLevel $ordered }}
+</div>
