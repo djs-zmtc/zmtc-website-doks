@@ -1,4 +1,5 @@
 // Put your custom SCSS code here
+/*
 *,
 :after,
 :before {
@@ -6,6 +7,7 @@
    box-sizing: border-box;
    border: 0 solid #e5e7eb
 }
+*/
 
 :root {
   --color-neutral-50: 250,250,250;
@@ -19,52 +21,109 @@
   --color-neutral-800: 38,38,38;
   --color-neutral-900: 23,23,23;
   --color-neutral-950: 10,10,10;
+  --zmtc-techdoc-heading-margin: -1.5rem;
 }
 
-div.techdoc {
+main.zmtc-techdoc {
    counter-reset: td-h2 0;
-   display: block;
+   position: sticky;
+   /* display: block; */
 }
 
-.techdoc h2 {
+.zmtc-techdoc h1 {
+   counter-reset: td-h2 0;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
+}
+
+.zmtc-techdoc h2 {
    counter-reset: td-h3 0;
+   background-color: rgba(var(--color-neutral-700),1);
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
+   text-decoration-line: none;
 }
 
-.techdoc h3 {
+.zmtc-techdoc h3 {
    counter-reset: td-h4 0;
+   background-color: rgba(var(--color-neutral-700),1);
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
 }
 
-.techdoc h4 {
+.zmtc-techdoc h4 {
    counter-reset: td-h5 0;
+   background-color: rgba(var(--color-neutral-700),1);
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
 }
 
-.techdoc h5 {
+.zmtc-techdoc h5 {
    counter-reset: td-h6 1;
+   background-color: rgba(var(--color-neutral-700),1);
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
 }
 
-.techdoc h2::before {
+.zmtc-techdoc h6 {
+   background-color: rgba(var(--color-neutral-700),1);
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+   margin-left: var(--zmtc-techdoc-heading-margin);
+   margin-right: var(--zmtc-techdoc-heading-margin);
+}
+
+.zmtc-techdoc > h2[id]::before {
+   display: inline-block !important;
+   height: inherit !important;
+   margin-top: inherit !important;
    counter-increment: td-h2;
-   content: counter(td-h2) ": ";
+   content: counter(td-h2) ": " !important;
 }
 
-.techdoc h3::before {
+.zmtc-techdoc > h3[id]::before {
+   display: inline-block !important;
+   height: inherit !important;
+   margin-top: inherit !important;
    counter-increment: td-h3;
-   content: counter(td-h2) "." counter(td-h3) ": ";
+   content: counter(td-h2) "." counter(td-h3) ": " !important;
 }
 
-.techdoc h4::before {
+.zmtc-techdoc > h4[id]::before {
+   display: inline-block !important;
+   height: inherit !important;
+   margin-top: inherit !important;
    counter-increment: td-h4;
-   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) ": ";
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) ": " !important;
 }
 
-.techdoc h5::before {
+.zmtc-techdoc > h5[id]::before {
+   display: inline-block !important;
+   height: inherit !important;
+   margin-top: inherit !important;
    counter-increment: td-h5;
-   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) ": ";
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) ": " !important;
 }
 
-.techdoc h6::before {
+.zmtc-techdoc > h6[id]::before {
+   display: inline-block !important;
+   height: inherit !important;
+   margin-top: inherit !important;
    counter-increment: td-h6;
-   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) "." counter(td-h6) ": ";
+   content: counter(td-h2) "." counter(td-h3) "." counter(td-h4) "." counter(td-h5) "." counter(td-h6) ": " !important;
 }
 
 h1, .h1 {
@@ -73,7 +132,6 @@ h1, .h1 {
 
 h2, .h2 {
    font-size: calc(1.325rem + 0.9vw);
-   text-decoration-line: underline;
   // font-variant: small-caps;
 }
 
