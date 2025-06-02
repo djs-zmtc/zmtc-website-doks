@@ -134,3 +134,64 @@ ol.thulite-steps > li > *:not(:first-child) {
    margin-left: 1rem;
 }
 
+
+blockquote {
+   background-color: rgba(var(--color-neutral-100),1);
+   border-left: 3px solid rgba(var(--color-neutral-400),1);
+}
+
+[data-bs-theme="dark"] blockquote {
+   background-color: rgba(var(--color-neutral-800),1);
+   border-left: 3px solid rgba(var(--color-neutral-200),1);
+}
+
+.nav-tabs {
+   margin-bottom: 0;
+   border-bottom: 1px solid rgba(var(--color-neutral-400),1);
+}
+
+.nav-tabs .nav-link  {
+   background-color: rgba(var(--color-neutral-500),0.1);
+   border-left: transparent;
+   border-top: transparent;
+   border-right: transparent;
+}
+
+[data-bs-theme="dark"] .nav-tabs .nav-link {
+   background-color: rgba(var(--color-neutral-200),0.3);
+   border-left: transparent;
+   border-top: transparent;
+   border-right: transparent;
+}
+
+.nav-tabs .nav-link.active {
+   background-color: rgba(var(--color-neutral-500),0.3);
+   border-left: 1px solid rgba(var(--color-neutral-800),1);
+   border-top: 1px solid rgba(var(--color-neutral-800),1);
+   border-right: 1px solid rgba(var(--color-neutral-800),1);
+   border-bottom: 5px double rgba(var(--color-neutral-800),1);
+}
+
+[data-bs-theme="dark"] .nav-tabs .nav-link.active {
+   background-color: rgba(var(--color-neutral-200),0.3);
+   border-left: 1px solid rgba(var(--color-neutral-200),1);
+   border-top: 1px solid rgba(var(--color-neutral-200),1);
+   border-right: 1px solid rgba(var(--color-neutral-200),1);
+   border-bottom: 6px double rgba(var(--color-neutral-200),1);
+}
+
+.tab-content {
+   border: 1px solid rgba(var(--color-neutral-400),1);
+   margin-bottom: 1.5rem;
+}
+
+.tab-content .tab-pane {
+   width: 98%;
+   margin: 0.5rem auto;
+}
+
+.tab-content .tab-pane .expressive-code {
+   margin: 0;
+}
+
+

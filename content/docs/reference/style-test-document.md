@@ -19,7 +19,7 @@ seo:
 
 Adipisicing consequat minim adipisicing ex ipsum aliquip commodo cillum cupidatat incididunt sit. Enim esse eu non incididunt et tempor culpa. Ex deserunt do cupidatat aute. Minim aliqua excepteur qui minim exercitation do veniam ea dolore ipsum sunt. Pariatur consequat do duis commodo proident esse magna ea labore dolore.
 
-```powershell
+```powershell {title="Get current directory"}
 Get-Location ~
 ```
 
@@ -39,6 +39,8 @@ Ut laborum sunt est ad. Sunt irure dolore ipsum voluptate. Officia velit ex nisi
 
 In do est irure sit et. Ullamco consequat id anim aliquip excepteur cillum laboris et sit voluptate. Dolore occaecat quis magna quis enim mollit voluptate aute elit et sit aliqua. Quis eiusmod est amet esse cupidatat aliqua mollit qui incididunt sint non commodo. Minim nostrud veniam nulla consequat anim ea.
 
+> Fugiat quis tempor magna non velit in amet in incididunt nostrud eu Lorem. Enim adipisicing veniam veniam velit amet nisi cupidatat aliqua dolor. Elit dolore magna minim occaecat enim quis quis. Laboris velit officia esse nisi anim magna est. Id ipsum quis anim irure aute officia amet mollit anim nostrud anim et. Fugiat eu nisi eu labore cillum cillum aliquip occaecat. Eiusmod velit excepteur ex deserunt quis sint.
+
 Magna occaecat esse commodo consectetur veniam minim ullamco ea consectetur eiusmod id sit. Dolor veniam laborum aliqua veniam sit culpa est sunt labore cupidatat et sint sit ut. Minim consequat id quis sunt esse nostrud et sint. Proident ex qui officia enim aliqua do minim. Adipisicing ullamco eiusmod exercitation laboris irure tempor ut est non. Consequat veniam pariatur fugiat enim id id fugiat exercitation.
 
 ## Section 2
@@ -48,6 +50,22 @@ Labore qui aute Lorem aliqua do nostrud in enim nulla veniam tempor eiusmod nisi
 ### Section 2.1
 
 Irure qui veniam do occaecat cupidatat ex. Magna consectetur reprehenderit officia veniam laborum tempor adipisicing deserunt voluptate tempor tempor. Qui commodo occaecat nostrud ea irure exercitation qui sunt culpa aliquip eu ut consectetur. Aute aliquip ullamco pariatur nisi non mollit nisi esse.
+
+{{< tabs "Get Current Directory" >}}
+
+{{< tab "Powershell" >}}
+```powershell {frame="yes"}
+Get-Location .
+```
+{{< /tab >}}
+
+{{< tab "CMD" >}}
+```batch {frame="none"}
+CD
+```
+{{< /tab >}}
+
+{{< /tabs >}}
 
 Irure aliqua pariatur sunt ullamco dolor. Irure amet sunt minim pariatur dolore nulla in. Sit sint ipsum est sit aliqua non. Do reprehenderit laboris est labore. Ad sint pariatur culpa irure culpa do.
 
