@@ -23,6 +23,48 @@ Adipisicing consequat minim adipisicing ex ipsum aliquip commodo cillum cupidata
 Get-Location ~
 ```
 
+{{< notebox type="question" >}}
+This is a Question blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="info" >}}
+This is an Info blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="note" >}}
+This is a Note blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="tip" >}}
+This is a Tip blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="important" >}}
+This is an Important blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="warning" >}}
+This is a Warning blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
+{{< notebox type="danger" >}}
+This is a Danger blockquote.
+
+Id eu eiusmod est laborum duis aliqua dolore enim Lorem consectetur nulla. Enim culpa sunt sunt excepteur excepteur. Id nostrud irure laborum proident sint reprehenderit est do esse anim in exercitation esse. Anim labore consequat non esse nisi cupidatat ullamco esse commodo consectetur eiusmod voluptate aliquip.
+{{< /notebox >}}
+
 ### Section 1.1
 
 Ut laborum sunt est ad. Sunt irure dolore ipsum voluptate. Officia velit ex nisi esse minim non incididunt excepteur duis ex amet do eiusmod. Qui nisi deserunt minim occaecat veniam.
