@@ -30,3 +30,4 @@ node_modules
 public
 resources
 hugo_stats.json
+package-lock.json
