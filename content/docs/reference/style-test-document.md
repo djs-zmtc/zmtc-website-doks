@@ -35,11 +35,32 @@ Ut laborum sunt est ad. Sunt irure dolore ipsum voluptate. Officia velit ex nisi
 
 {{< callout context="danger" title="Danger" icon="outline/alert-octagon" >}}This is a Danger Alert{{< /callout >}}
 
-### Section 1.2
+### Section 1.2 (GitHub/Obsidian/Typora Alert Callouts)
 
 In do est irure sit et. Ullamco consequat id anim aliquip excepteur cillum laboris et sit voluptate. Dolore occaecat quis magna quis enim mollit voluptate aute elit et sit aliqua. Quis eiusmod est amet esse cupidatat aliqua mollit qui incididunt sint non commodo. Minim nostrud veniam nulla consequat anim ea.
 
-> Fugiat quis tempor magna non velit in amet in incididunt nostrud eu Lorem. Enim adipisicing veniam veniam velit amet nisi cupidatat aliqua dolor. Elit dolore magna minim occaecat enim quis quis. Laboris velit officia esse nisi anim magna est. Id ipsum quis anim irure aute officia amet mollit anim nostrud anim et. Fugiat eu nisi eu labore cillum cillum aliquip occaecat. Eiusmod velit excepteur ex deserunt quis sint.
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!TIP] HINT
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+> [!INVALID]
+> Invalid Alert Entry
+
+Fugiat quis tempor magna non velit in amet in incididunt nostrud eu Lorem. Enim adipisicing veniam veniam velit amet nisi cupidatat aliqua dolor. Elit dolore magna minim occaecat enim quis quis. Laboris velit officia esse nisi anim magna est. Id ipsum quis anim irure aute officia amet mollit anim nostrud anim et. Fugiat eu nisi eu labore cillum cillum aliquip occaecat. Eiusmod velit excepteur ex deserunt quis sint.
 
 Magna occaecat esse commodo consectetur veniam minim ullamco ea consectetur eiusmod id sit. Dolor veniam laborum aliqua veniam sit culpa est sunt labore cupidatat et sint sit ut. Minim consequat id quis sunt esse nostrud et sint. Proident ex qui officia enim aliqua do minim. Adipisicing ullamco eiusmod exercitation laboris irure tempor ut est non. Consequat veniam pariatur fugiat enim id id fugiat exercitation.
 
