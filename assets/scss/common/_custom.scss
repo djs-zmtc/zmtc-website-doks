@@ -201,13 +201,29 @@ blockquote.alert.alert--noop {
    background-color: rgba(255,255,255,0.05);
 }
 
+.docs main .alert {
+   margin-left: 1rem;
+   margin-right: 0;
+}
+
 .alert {
+   font-family: var(--bs-body-font-family);
    color: inherit;
-   border-left: 0.75rem double black;
-   border-right: 0.25px solid black;
-   border-top: 0.25px solid black;
-   border-bottom: 0.25px solid black;
+   border-left: 0.75rem double currentColor;
+   border-right: 0.25px solid currentColor;
+   border-top: 0.25px solid currentColor;
+   border-bottom: 0.25px solid currentColor;
    border-radius: 0.75rem;
+   padding: 0.667rem 0.75rem 0.667rem 0.75rem;
+   box-shadow: 0.25rem 0.25rem 0.5rem;
+   // margin-left: 0;
+   // margin-right: 0;
+}
+
+.alert p.alert-heading {
+   margin-bottom: 0.5rem;
+   padding: 0;
+   line-height: 1.25;
 }
 
 .alert p.alert-heading > svg.svg-inline {
@@ -226,116 +242,168 @@ blockquote.alert.alert--noop {
 
 .alert p.alert-content {
    min-width: 0;
-}
-
-.alert p.alert-heading {
-   margin-bottom: 0.5rem;
-   padding: 0;
-   line-height: 1.5;
-}
-
-.alert p.alert-heading {
    margin-bottom: 0;
-   padding: 0;
+   margin-top: 0.75rem;
+   margin-bottom: 0.25rem;
+   font-size: 1rem;
+   line-height: 1.2;
 }
+
+// .alert p.alert-heading {
+//    margin-bottom: 0;
+//    padding: 0;
+// }
 
 .alert p.alert-content {
    color: inherit;
 }
 
-.alert p.alert-content {
-   margin-bottom: 0;
-   margin-top: 1rem;
-   line-height: 1.2;
-}
-
-.alert p.alert-content {
-   margin-bottom: 0;
-   margin-top: 1rem;
-   line-height: 1.2;
-}
-
-.alert-question {
-   background-color: rgba(var(--zmtc-color-question),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-question),1);
-   --zmtc-this-color: var(--zmtc-color-question);
-}
-
-.alert-question svg {
-   color: rgba(var(--zmtc-color-question),1);
-}
-
-.alert-info {
-   background-color: rgba(var(--zmtc-color-info),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-info),1);
-   --zmtc-this-color: var(--zmtc-color-info);
-}
-
-.alert-info svg {
-   color: rgba(var(--zmtc-color-info),1);
-}
-
-.alert-note {
-   background-color: rgba(var(--zmtc-color-note),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-note),1);
-   --zmtc-this-color: var(--zmtc-color-note);
-}
-
-.alert-note svg {
-   color: rgba(var(--zmtc-color-note),1);
-}
-
-.alert-important {
-   background-color: rgba(var(--zmtc-color-important),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-important),1);
-   --zmtc-this-color: var(--zmtc-color-important);
-}
-
-.alert-important svg {
-   color: rgba(var(--zmtc-color-important),1);
-}
-
-.alert-tip {
-   background-color: rgba(var(--zmtc-color-tip),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-tip),1);
-   --zmtc-this-color: var(--zmtc-color-tip);
-}
-
-.alert-tip svg {
-   color: rgba(var(--zmtc-color-tip),1);
-}
-
-.alert-warning {
-   background-color: rgba(var(--zmtc-color-warning),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-warning),1);
-   --zmtc-this-color: var(--zmtc-color-warning);
-}
-
-.alert-warning svg {
-   color: rgba(var(--zmtc-color-warning),1);
+.alert-bug {
+   background-color: rgba(var(--alert-color-bug),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-bug),1);
+   --alert-this-color: var(--alert-color-bug);
+   & svg {
+      color: rgba(var(--alert-color-bug),1);
+   }
 }
 
 .alert-danger {
-   background-color: rgba(var(--zmtc-color-danger),var(--zmtc-nb-opacity));
-   border-color: rgba(var(--zmtc-color-danger),1);
-   --zmtc-this-color: var(--zmtc-color-danger);
+   background-color: rgba(var(--alert-color-danger),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-danger),1);
+   --alert-this-color: var(--alert-color-danger);
+   & svg {
+      color: rgba(var(--alert-color-danger),1);
+   }
 }
 
-.alert-danger svg {
-   color: rgba(var(--zmtc-color-danger),1);
+.alert-example {
+   background-color: rgba(var(--alert-color-example),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-example),1);
+   --alert-this-color: var(--alert-color-example);
+   & svg {
+      color: rgba(var(--alert-color-example),1);
+   }
 }
 
-[date-bs-theme="dark"] .alert svg,
-[data-bs-theme="dark"] .zmtc-nb-icon {
+.alert-failure {
+   background-color: rgba(var(--alert-color-failure),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-failure),1);
+   --alert-this-color: var(--alert-color-failure);
+   & svg {
+      color: rgba(var(--alert-color-failure),1);
+   }
+}
+
+.alert-important {
+   background-color: rgba(var(--alert-color-important),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-important),1);
+   --alert-this-color: var(--alert-color-important);
+   & svg {
+      color: rgba(var(--alert-color-important),1);
+   }
+}
+
+.alert-info {
+   background-color: rgba(var(--alert-color-info),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-info),1);
+   --alert-this-color: var(--alert-color-info);
+   & svg {
+      color: rgba(var(--alert-color-info),1);
+   }
+}
+
+.alert-question {
+   background-color: rgba(var(--alert-color-question),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-question),1);
+   --alert-this-color: var(--alert-color-question);
+   & svg {
+      color: rgba(var(--alert-color-question),1);
+   }
+}
+
+.alert-quote {
+   background-color: rgba(var(--alert-color-quote),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-quote),1);
+   --alert-this-color: var(--alert-color-quote);
+   & svg {
+      color: rgba(var(--alert-color-quote),1);
+   }
+}
+
+.alert-scroll {
+   background-color: rgba(var(--alert-color-scroll),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-scroll),1);
+   --alert-this-color: var(--alert-color-scroll);
+   & svg {
+      color: rgba(var(--alert-color-scroll),1);
+   }
+}
+
+.alert-success {
+   background-color: rgba(var(--alert-color-success),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-success),1);
+   --alert-this-color: var(--alert-color-success);
+   & svg {
+      color: rgba(var(--alert-color-success),1);
+   }
+}
+
+.alert-summary {
+   background-color: rgba(var(--alert-color-summary),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-summary),1);
+   --alert-this-color: var(--alert-color-summary);
+   & svg {
+      color: rgba(var(--alert-color-summary),1);
+   }
+}
+
+.alert-tip {
+   background-color: rgba(var(--alert-color-tip),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-tip),1);
+   --alert-this-color: var(--alert-color-tip);
+   & svg {
+      color: rgba(var(--alert-color-tip),1);
+   }
+}
+
+.alert-todo {
+   background-color: rgba(var(--alert-color-todo),var(--alert-opacity));
+   border-color: rgba(var(--alert-color-todo),1);
+   --alert-this-color: var(--alert-color-todo);
+   & svg {
+      color: rgba(var(--alert-color-todo),1);
+   }
+}
+
+// alert-warning -- special handling
+// Because we're using a lighter color here (goldenrod), we need to adjust the opacity
+// from the default set in _variables-custom.scss.
+// We cannot modify a :root variable, so we need to make a copy of --alert-opacity
+// and store it in --tmp-calc-x and then calculate --alert-opacity-new
+.alert-warning {
+   --tmp-calc-c: 1;
+   --tmp-calc-x: var(--alert-opacity);
+   --tmp-calc-top: calc(1 + var(--tmp-calc-c)) * var(--tmp-calc-x);
+   --tmp-calc-bottom: calc(1 + calc(var(--tmp-calc-c) * var(--tmp-calc-x)));
+   --alert-opacity-new: calc(var(--tmp-calc-top) / var(--tmp-calc-bottom));
+   background-color: rgba(var(--alert-color-warning),var(--alert-opacity-new));
+   border-color: rgba(var(--alert-color-warning),1);
+   --alert-this-color: var(--alert-color-warning);
+   & svg {
+      color: rgba(var(--alert-color-warning),1);
+   }
+}
+
+[date-bs-theme="dark"] .alert svg {
    color: inherit;
 }
 
 .alert .alert-heading {
    font-weight: 700;
-   font-size: 1.5rem;
+   font-size: 1.75rem;
    // border-top: 0.25rem solid rgba(var(--zmtc-this-color),1);
    // border-bottom: 0.25rem solid rgba(var(--zmtc-this-color),1);
-   color: rgba(var(--zmtc-this-color),1);
+   color: rgba(var(--alert-this-color),1);
    /* text-shadow: 3px 3px 3px gray; */
    // background-color: rgba(255,255,255,0.75);
    margin-left: -3rem;
