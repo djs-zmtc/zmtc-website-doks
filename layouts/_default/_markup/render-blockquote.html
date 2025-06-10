@@ -52,6 +52,7 @@
 {{ if eq .Type "alert" }}
   {{ $thisAlertType := .AlertType }}
   {{ $thisUseIcon := "" }}
+  {{ $thisAlertTitle := .AlertTitle }}
   {{ if isset $zmtcAlertType $thisAlertType }}
     {{ $thisUseIcon = index $zmtcAlertType $thisAlertType }}
   {{ else }}
@@ -64,7 +65,7 @@
       {{- with .AlertTitle -}}
         {{ . }}
       {{- else -}}
-        {{ or (i18n .AlertType) (title .AlertType) }}
+        {{ (or (i18n .AlertType ) (title .AlertType)) | replaceRE "(?i:tldr)" "TL;DR" | safeHTML }}
       {{- end -}}
     </p>
     {{ .Text | replaceRE "<p>" "<p class=\"alert-content\">" | safeHTML }}
