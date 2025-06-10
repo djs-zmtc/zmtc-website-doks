@@ -172,5 +172,41 @@
     --css-color-whitesmoke: 245, 245, 245;             /* #f5f5f5 */
     --css-color-yellow: 255, 255, 0;                   /* #ffff00 */
     --css-color-yellowgreen: 154, 205, 50;             /* #9acd32 */
+    --color-neutral-50: 250,250,250;
+    --color-neutral-100: 245,245,245;
+    --color-neutral-200: 229,229,229;
+    --color-neutral-300: 212,212,212;
+    --color-neutral-400: 163,163,163;
+    --color-neutral-500: 115,115,115;
+    --color-neutral-600: 82,82,82;
+    --color-neutral-700: 64,64,64;
+    --color-neutral-800: 38,38,38;
+    --color-neutral-900: 23,23,23;
+    --color-neutral-950: 10,10,10;
+    --zmtc-techdoc-heading-margin: -1.5rem;
+    --zmtc-color-question: 128, 128, 128;  /* gray */
+    --zmtc-color-info: 30, 144, 255;      /* dodgerblue */
+    --zmtc-color-note: 0,0,255;          /* blue */
+    --zmtc-color-tip: 0, 128, 0;         /* green */
+    --zmtc-color-important: 255, 0, 255; /* magenta */
+    --zmtc-color-warning: 218, 165, 32;  /* goldenrod */
+    --zmtc-color-danger: 255, 0, 0;      /* red */
+    --zmtc-nb-opacity: 0.25;
+    --alert-color-bug: var(--css-color-brown);
+    --alert-color-danger: var(--css-color-red);
+    --alert-color-example: var(--css-color-darkblue);
+    --alert-color-failure: var(--css-color-orangered);
+    --alert-color-important: var(--css-color-purple);
+    --alert-color-info: var(--css-color-blue);
+    --alert-color-question: var(--css-color-magenta);
+    --alert-color-quote: var(--css-color-grayscale75);
+    --alert-color-scroll: var(--css-color-darkblue);
+    --alert-color-success: var(--css-color-darkgreen);
+    --alert-color-summary: var(--css-color-rebeccapurple);
+    --alert-color-tip: var(--css-color-green);
+    --alert-color-todo: var(--css-color-teal);
+    --alert-color-warning: var(--css-color-goldenrod);
+    --alert-opacity: 0.15;
+    --alert-opacity-dark: calc(1 - var(--alert-opacity));
 }
 
